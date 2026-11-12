@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#060911" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+      <circle cx="40" cy="40" r="1" fill="#64748b" fill-opacity="0.3" />
+    </pattern>
+
+    <!-- Keyframe Animations -->
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-12px) rotate(1deg); }
+      }
+      @keyframes floatReverse {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(14px) rotate(-1.5deg); }
+      }
+      @keyframes pulseOrb {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.15); }
+      }
+      @keyframes pulseLine {
+        0%, 100% { stroke-dashoffset: 0; opacity: 0.3; }
+        50% { stroke-dashoffset: 40; opacity: 0.8; }
+      }
+      @keyframes shimmer {
+        0% { stop-color: #06b6d4; }
+        50% { stop-color: #ec4899; }
+        100% { stop-color: #06b6d4; }
+      }
+
+      .floating-node-1 { animation: floatSlow 7s ease-in-out infinite; transform-origin: center; }
+      .floating-node-2 { animation: floatReverse 8s ease-in-out infinite; transform-origin: center; }
+      .glowing-orb { animation: pulseOrb 6s ease-in-out infinite alternate; }
+      .network-line { stroke-dasharray: 8 6; animation: pulseLine 12s linear infinite; }
+      .pill-badge { transition: all 0.3s ease; }
+    </style>
+  </defs>
+
+  <!-- Deep Cosmic Background -->
+  <rect width="1200" height="420" fill="url(#bgGrad)" />
+
+  <!-- Grid Blueprint Pattern -->
+  <rect width="1200" height="420" fill="url(#gridPattern)" />
+
+  <!-- Dynamic Glowing Mesh Spheres (Background) -->
+  <g class="glowing-orb" filter="url(#glow)">
+    <circle cx="180" cy="110" r="140" fill="#06b6d4" opacity="0.25" />
+    <circle cx="1020" cy="310" r="170" fill="#8b5cf6" opacity="0.3" />
+    <circle cx="600" cy="40" r="110" fill="#3b82f6" opacity="0.2" />
+    <circle cx="940" cy="90" r="100" fill="#ec4899" opacity="0.22" />
+  </g>
+
+  <!-- Dynamic Schema Network Connectors (Background) -->
+  <g class="network-line" stroke="#38bdf8" stroke-width="1.5">
+    <path d="M 120 280 Q 240 180 340 310 T 600 230" fill="none" />
+    <path d="M 860 160 Q 980 260 1100 180" fill="none" stroke="#c084fc" />
+    <path d="M 220 90 L 320 180 L 180 260 Z" fill="none" stroke="#64748b" stroke-width="1" opacity="0.4" />
+  </g>
+
+  <!-- Dynamic Animated Node Cards (Sides - Behind Main Text) -->
+  <g class="floating-node-1" opacity="0.85">
+    <!-- Left Decorative Schema Node -->
+    <g transform="translate(60, 110)">
+      <rect width="190" height="110" rx="14" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2" filter="url(#subtleGlow)" />
+      <circle cx="24" cy="24" r="7" fill="#38bdf8" />
+      <rect x="40" y="19" width="90" height="10" rx="4" fill="#94a3b8" />
+      <line x1="16" y1="46" x2="174" y2="46" stroke="#334155" stroke-width="1" />
+      <rect x="20" y="58" width="55" height="8" rx="3" fill="#0284c7" />
+      <text x="82" y="66" fill="#7dd3fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="10">field_id : UUID</text>
+      <rect x="20" y="78" width="55" height="8" rx="3" fill="#9333ea" />
+      <text x="82" y="86" fill="#d8b4fe" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="10">custom_meta : JSON</text>
+    </g>
+  </g>
+
+  <g class="floating-node-2" opacity="0.85">
+    <!-- Right Decorative Schema Node -->
+    <g transform="translate(950, 190)">
+      <rect width="195" height="120" rx="14" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1.2" filter="url(#subtleGlow)" />
+      <circle cx="24" cy="24" r="7" fill="#ec4899" />
+      <rect x="40" y="19" width="95" height="10" rx="4" fill="#94a3b8" />
+      <line x1="16" y1="46" x2="179" y2="46" stroke="#334155" stroke-width="1" />
+      <circle cx="28" cy="62" r="4" fill="#10b981" />
+      <text x="42" y="66" fill="#a7f3d0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="11">Schema Validation</text>
+      <circle cx="28" cy="84" r="4" fill="#6366f1" />
+      <text x="42" y="88" fill="#c7d2fe" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="11">Dynamic Attributes</text>
+      <circle cx="28" cy="104" r="4" fill="#f59e0b" />
+      <text x="42" y="107" fill="#fde68a" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="10">Zero-Downtime EAV</text>
+    </g>
+  </g>
+
+  <!-- FOREGROUND: Content Header (Centered & High Contrast) -->
+  <g transform="translate(600, 80)">
+    <!-- Top Category Pill -->
+    <g transform="translate(0, 0)">
+      <rect x="-170" y="0" width="340" height="32" rx="16" fill="#1e293b" stroke="#0284c7" stroke-width="1.2" />
+      <circle cx="-146" cy="16" r="5" fill="#38bdf8" />
+      <text x="-132" y="21" fill="#38bdf8" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">ENTERPRISE DATA ARCHITECTURE</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="80" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      Awesome Custom Metadata
+    </text>
+    <text x="0" y="130" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="40" font-weight="900" fill="url(#accentCyan)" letter-spacing="-0.5">
+      &amp; Attribute Schema Management
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="175" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif" font-size="16" fill="#94a3b8" font-weight="400">
+      Curated index of SaaS Platforms, Open-Source Engines, Dynamic Schemas &amp; Custom-Field Architectures
+    </text>
+
+    <!-- Feature Attribute Pills (Foreground, neatly aligned) -->
+    <g transform="translate(0, 220)">
+      <!-- Pill 1 -->
+      <g transform="translate(-360, 0)">
+        <rect x="0" y="0" width="165" height="34" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <text x="82" y="22" text-anchor="middle" fill="#38bdf8" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12" font-weight="600">⚡ Dynamic EAV Models</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(-180, 0)">
+        <rect x="0" y="0" width="165" height="34" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <text x="82" y="22" text-anchor="middle" fill="#a855f7" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12" font-weight="600">🏛️ Schema Registries</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="175" height="34" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <text x="87" y="22" text-anchor="middle" fill="#34d399" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12" font-weight="600">🧩 Custom Field Engines</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(190, 0)">
+        <rect x="0" y="0" width="170" height="34" rx="17" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+        <text x="85" y="22" text-anchor="middle" fill="#f43f5e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="12" font-weight="600">🔒 Data Governance</text>
+      </g>
+    </g>
+  </g>
+</svg>

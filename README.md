@@ -1,31 +1,60 @@
-# Awesome-Custom-Metadata-Attribute-Schema-Management
+# Awesome Custom Metadata & Attribute Schema Management ⚡
 
-## Top Custom Metadata & Attribute Schema Management Ecosystem
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Custom Metadata & Attribute Schema Management Banner" width="100%" />
+</p>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Custom Fields, Flexible Schemas & Low-Code Data Model Extension*  
-**Last updated: March 2026**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Custom Metadata & Attribute Schema Management**. These tools help organizations extend their core data models with custom fields, attributes, and metadata schemas—adapting CRM, CLM, ITSM, and database platforms to fit unique business processes without forking the underlying product.
+---
 
-**Examples** include Salesforce Object Manager, Ironclad Data Manager, Airtable Field Manager, SmartSuite Fields, ServiceNow Schema, and open-source alternatives like Twenty, OpenContracts, and Baserow (the category leaders).
+## 📖 Curated Ecosystem: Custom Fields, Flexible Schemas & Data Model Extensions
 
-**Open-source emphasis**: This section highlights every major active project for self-hosted metadata schemas, open-source custom field systems, and community-driven schema registries—ideal for organizations seeking data sovereignty and transparent schema governance over per-object or per-seat SaaS limits.
+> **A curated collection of SaaS platforms, open-source engines, schema registries, dynamic EAV models, and low-code data architecture frameworks for extending core data models without rigid database migrations.**
 
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
+This repository tracks notable **SaaS enterprise platforms** and **active open-source projects** engineered for **Custom Metadata & Attribute Schema Management**. These solutions empower organizations to extend core schemas with custom fields, user-defined properties, and validation rules—adapting CRM, CLM, ERP, ITSM, and database platforms to bespoke business workflows with zero platform forks.
 
-## Table of Contents
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+### 🎯 Key Architectural Focus Areas
+- 🧩 **Custom Field Engines**: Extensible typed attributes (text, datetime, formulas, linked references, multiselect).
+- ⚡ **Dynamic EAV & JSON Schemas**: High-performance Entity-Attribute-Value models, JSONB structures, and document schemas.
+- 🏛️ **Schema Registries & Governance**: Versioning, compatibility enforcement (Avro/Protobuf/JSON), and schema drift prevention.
+- 🌐 **Self-Hosted Data Sovereignty**: Production-grade open-source tools with GraphQL/REST APIs and no per-seat or per-object license caps.
 
-## Sector Overview & Market Dynamics
+---
 
-The global metadata management and extensible data modeling market is estimated at approximately **$14B to $15B** (expanding rapidly toward ~$60B+ by the early 2030s as enterprise data volumes surge). The sector exhibits a **moderately fragmented yet top-heavy dynamic**: while dominant cloud and CRM ecosystems (like Salesforce and ServiceNow) capture significant enterprise share through proprietary schema engines, the market remains contested and diverse across specialized CLM platforms, flexible workflow databases, and an accelerating wave of open-source schema managers catering to data sovereignty needs.
+## 📑 Table of Contents
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Enterprise Platforms](#️-saas--hosted-enterprise-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Architectural Guidance & Implementation Patterns](#️-architectural-guidance--implementation-patterns)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer](#️-disclaimer)
 
-## SaaS/Hosted Platforms
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global metadata management and extensible data modeling market is estimated at approximately **$14B to $15B** (projected to expand past **$60B+ by the early 2030s** at an estimated 20–25% CAGR as enterprise data volumes surge). 
+
+The sector exhibits a **moderately fragmented yet top-heavy dynamic**:
+- **At the Enterprise Top Tier**: Giants like Salesforce and ServiceNow capture dominant market share with mature, proprietary custom object and schema management engines baked directly into application platforms.
+- **Across Mid-Market & Niche Domains**: The space remains highly competitive and fragmented across specialized Contract Lifecycle Management (CLM) suites, hybrid spreadsheet-database tools, and iPaaS providers.
+- **In Open-Source & Modern Engineering**: Accelerating data sovereignty mandates and SaaS per-object/per-seat pricing caps are driving rapid adoption of open-source schema managers, headless data layers, and distributed schema registries.
+
+---
+
+## ☁️ SaaS & Hosted Enterprise Platforms
+
+Enterprise SaaS solutions sorted descending by company scale (**valuation / market capitalization / revenue**):
 
 | Product | Company Size (Valuation / Revenue) | Starting Pricing | Free Tier / Trial Limits | Description |
 |---------|-----------------------------------|------------------|--------------------------|-------------|
@@ -39,40 +68,92 @@ The global metadata management and extensible data modeling market is estimated 
 | **[Agiloft Field Studio](https://www.agiloft.com/)** | **~$300M+ Est. Value (KKR Majority)** (~$50M+ ARR) | Essentials plan: **~$500/month** (~$6,000/year baseline; median enterprise rollout ~$25,000+/year) | **Astra Free Tier forever**: Unlimited users with Astra Word add-in; full CLM platform has **no free tier** | No-code field and table configuration for Agiloft CLM. Admins define custom fields, data types, and relationships without development assistance. |
 | **[SmartSuite Fields](https://www.smartsuite.com/)** | **~$150M Valuation** (~$10M+ ARR) | Team plan: **$15/seat/month** (billed annually, 3-user minimum: $45/month) | **14-day free trial**: Access to all Professional features without requiring a credit card | Field customization with granular options: help text, default values, field-level permissions, and protected system fields. Changing field types attempts automated value conversion. |
 
-## Open-Source GitHub Projects
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Self-hosted frameworks, dynamic database engines, active metadata platforms, and schema registries. Sorted descending by **GitHub Star Count**:
 
 | Project | Star Badge | Description |
 |---------|------------|-------------|
-| **[Twenty](https://github.com/twentyhq/twenty)** | [![Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers) | **The most complete open-source CRM with custom objects and fields.** ~28,000 GitHub stars. Users can create custom objects (name, icon, description freely assigned) and add custom fields with multiple data types (text, number, date, selected value). Deactivating a field preserves data and API access—it simply disappears from the app UI while integrations continue to function. Self-hostable via Docker; AGPL-3.0 with some MIT packages [citation:18][citation:26]. |
-| **[OpenContracts Metadata System](https://github.com/open-source-legal/opencontracts)** | [![Stars](https://img.shields.io/github/stars/open-source-legal/opencontracts?style=social&color=white)](https://github.com/open-source-legal/opencontracts/stargazers) | **Purpose-built contract metadata schema system.** Corpus-scoped metadata columns with 12 data types (STRING, TEXT, BOOLEAN, INTEGER, FLOAT, DATE, DATETIME, URL, EMAIL, CHOICE, MULTI_CHOICE, JSON). Includes validation configs (required, choices), GraphQL API, Excel-like grid editing, and full CRUD on schema. Adds/modifies columns at any time without data loss [citation:16]. |
-| **[Baserow](https://github.com/baserow/baserow)** | [![Stars](https://img.shields.io/github/stars/baserow/baserow?style=social&color=white)](https://github.com/baserow/baserow/stargazers) | **Open-source Airtable alternative with extensible field types.** Self-hosted instances have unlimited rows on paid tiers; cloud free plan caps at 3,000 rows. Field types include text, long text, number, boolean, date, and more. **Plugin architecture allows creating custom field types**—the documentation includes a tutorial for building an IntegerField with custom validation logic [citation:5][citation:22][citation:30]. |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Stencil](https://github.com/goto/stencil)** | [![Stars](https://img.shields.io/github/stars/goto/stencil?style=social&color=white)](https://github.com/goto/stencil/stargazers) | Open-source schema registry for Protobuf, Avro, and JSON. Version history, backward compatibility enforcement on upload, and clients in Go, Java, and JS for dynamic schema deserialization. PostgreSQL-backed with Docker deployment. A **schema registry** rather than a custom-field UI, but directly applicable for managing attribute schemas across services [citation:3]. |
-| **[NocoDB](https://github.com/nocodb/nocodb)** | [![Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers) | Turns any SQL database into a smart spreadsheet. Field types include Attachment, Checkbox, Rating, JSON, and Geometry in addition to standard types. Relational fields (LinkToAnotherRecord, Lookup, Rollup) mirror Airtable's linked-record model [citation:21][citation:29]. |
-| **[Corteza](https://github.com/cortezaproject/corteza)** | [![Stars](https://img.shields.io/github/stars/cortezaproject/corteza?style=social&color=white)](https://github.com/cortezaproject/corteza/stargazers) | Open-source low-code platform with **unlimited app creation** and data harmonization. Transforms data into standardized JSON for custom data models. 100% free and open-source; export/import complete app configurations and record data without limits [citation:27]. |
-
-**Frameworks for building custom systems**: Combine **Twenty** for CRM custom objects and fields with self-hosting, **OpenContracts** for contract-specific metadata schemas with 12 data types and GraphQL API, and **Baserow** for extensible no-code databases with custom field-type plugins—all deployable via Docker without per-object or per-record SaaS limits. For schema registry needs across microservices, **Stencil** provides versioned Protobuf/Avro/JSON management.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Custom metadata and attribute schemas govern how business data is structured and queried; enforce validation rules, data type constraints, and audit trails to prevent schema drift and data corruption.
-- **Custom field limits and feature availability vary dramatically.** Salesforce caps Platform Starter at **10 custom objects**; Airtable's Field Manager (dependency tracking before deletion) is **paid-tier only** [citation:9]; Workato Data Tables are explicitly **not relational databases** and have a 10,000-character limit on long text [citation:14]. Open-source alternatives like **Twenty** and **OpenContracts** provide genuine custom schema capabilities but require self-hosting effort. Always validate schema design against your actual query patterns and data volume before committing.
+| **[Strapi](https://github.com/strapi/strapi)** | [![Stars](https://img.shields.io/github/stars/strapi/strapi?style=social&color=white)](https://github.com/strapi/strapi/stargazers) | **Leading open-source headless CMS with visual Content-Type Builder.** Allows developers and content editors to dynamically add custom fields, define components, set up polymorphic relations, and generate automatic REST/GraphQL schemas with database migrations. |
+| **[NocoDB](https://github.com/nocodb/nocodb)** | [![Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers) | **Open-source Airtable alternative that turns any relational database into a smart spreadsheet.** Supports dynamic custom columns, attachment fields, ratings, JSON, formulas, and relational lookups/rollups over MySQL, PostgreSQL, SQL Server, and SQLite. |
+| **[Twenty](https://github.com/twentyhq/twenty)** | [![Stars](https://img.shields.io/github/stars/twentyhq/twenty?style=social&color=white)](https://github.com/twentyhq/twenty/stargazers) | **Full-featured modern open-source CRM with custom objects and extensible fields.** Users can create custom objects on the fly, add multi-type fields (text, number, date, selects), and manage relationships. Deactivating fields preserves underlying data and programmatic API access. |
+| **[Directus](https://github.com/directus/directus)** | [![Stars](https://img.shields.io/github/stars/directus/directus?style=social&color=white)](https://github.com/directus/directus/stargazers) | **Instant real-time data engine and data studio for SQL databases.** Dynamically configures schema definitions, field interfaces, relational displays, validation rules, and custom metadata layers directly on top of PostgreSQL, MySQL, SQLite, and Oracle without migrations locking the database. |
+| **[OpenMetadata](https://github.com/open-metadata/OpenMetadata)** | [![Stars](https://img.shields.io/github/stars/open-metadata/OpenMetadata?style=social&color=white)](https://github.com/open-metadata/OpenMetadata/stargazers) | **Unified metadata management platform with extensible custom attributes.** Features centralized schema definition, automated lineage tracking, custom glossary terms, and user-defined custom attributes across all data entities using JSON Schema standards. |
+| **[DataHub](https://github.com/datahub-project/datahub)** | [![Stars](https://img.shields.io/github/stars/datahub-project/datahub?style=social&color=white)](https://github.com/datahub-project/datahub/stargazers) | **Extensible open-source metadata platform developed originally by LinkedIn.** Utilizes a stream-based metadata architecture with flexible Metadata Change Proposals (MCP), user-defined tags, glossary terms, domain modeling, and dynamic schema versioning across data catalogs. |
+| **[Buf](https://github.com/bufbuild/buf)** | [![Stars](https://img.shields.io/github/stars/bufbuild/buf?style=social&color=white)](https://github.com/bufbuild/buf/stargazers) | **Modern build tool, linter, and schema registry ecosystem for Protocol Buffers.** Provides strict schema compatibility enforcement, breaking-change detection, automated client code generation, and version-controlled API schema management across microservices. |
+| **[Baserow](https://github.com/baserow/baserow)** | [![Stars](https://img.shields.io/github/stars/baserow/baserow?style=social&color=white)](https://github.com/baserow/baserow/stargazers) | **Modular open-source no-code database with pluggable field architectures.** Offers native field types and a developer plugin API allowing creation of custom field types with proprietary validation and business rules. Backed by PostgreSQL and Django. |
+| **[Amundsen](https://github.com/amundsen-io/amundsen)** | [![Stars](https://img.shields.io/github/stars/amundsen-io/amundsen?style=social&color=white)](https://github.com/amundsen-io/amundsen/stargazers) | **Data discovery and metadata engine created at Lyft.** Leverages Neo4j or Apache Atlas graph backends to model schema relationships, table descriptions, column-level metadata, tags, and data lineage across enterprise data infrastructures. |
+| **[Confluent Schema Registry](https://github.com/confluentinc/schema-registry)** | [![Stars](https://img.shields.io/github/stars/confluentinc/schema-registry?style=social&color=white)](https://github.com/confluentinc/schema-registry/stargazers) | **Enterprise schema management service for event streams.** Provides a RESTful interface for storing and retrieving Avro, JSON Schema, and Protobuf definitions, enforcing backward, forward, and full compatibility across distributed event-driven systems. |
+| **[Corteza](https://github.com/cortezaproject/corteza)** | [![Stars](https://img.shields.io/github/stars/cortezaproject/corteza?style=social&color=white)](https://github.com/cortezaproject/corteza/stargazers) | **100% open-source low-code platform for building enterprise record applications.** Features unlimited module and custom field definitions, flexible JSON-based data harmonization, role-based attribute permissions, and granular privacy controls. |
+| **[OpenContracts](https://github.com/open-source-legal/opencontracts)** | [![Stars](https://img.shields.io/github/stars/open-source-legal/opencontracts?style=social&color=white)](https://github.com/open-source-legal/opencontracts/stargazers) | **Purpose-built contract metadata schema platform.** Supports corpus-scoped custom metadata columns across 12 distinct data types (JSON, choices, dates, numbers, text) with validation rules, GraphQL APIs, and Excel-style bulk attribute manipulation. |
+| **[Raystack Stencil](https://github.com/raystack/stencil)** | [![Stars](https://img.shields.io/github/stars/raystack/stencil?style=social&color=white)](https://github.com/raystack/stencil/stargazers) | **Dynamic schema registry for Protobuf, Avro, and JSON Schemas.** Features backward compatibility checks, version history, Docker deployments, and SDKs in Go and Java for client-side dynamic deserialization. |
 
 ---
 
-**Made for CRM administrators, data architects, CLM configurators, and developers building extensible data platforms.**  
-Let's make custom metadata and schema management more open, flexible, and governable.
+## 🛠️ Architectural Guidance & Implementation Patterns
+
+When designing custom metadata and attribute architectures, choose the design pattern that fits your scaling requirements:
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│               Schema Extension Architecture Patterns                   │
+├────────────────────────────────────────────────────────────────────────┤
+│ 1. EAV (Entity-Attribute-Value):                                       │
+│    • Highest runtime flexibility                                       │
+│    • Suitable for highly sparse attributes across millions of items    │
+│    • Trade-off: Complex SQL joins & harder query indexing              │
+│                                                                        │
+│ 2. JSONB / Semi-Structured Document Columns:                           │
+│    • Modern standard in PostgreSQL & MySQL 8+                          │
+│    • GIN indexable with fast key-value lookups                         │
+│    • Enforce schema constraints via application-layer JSON Schema      │
+│                                                                        │
+│ 3. Metadata Catalog & Registry (Active Metadata):                      │
+│    • Decoupled schema governance for distributed microservices         │
+│    • Enforces backward/forward evolution guarantees (Protobuf / Avro)  │
+│    • Prevents pipeline breakage during upstream schema shifts          │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated ecosystem repository useful for your data architecture, research, or development projects, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it on GitHub.
+- 🍴 **Fork the repo** and contribute additions, corrections, and new platforms.
+- 📢 **Share the project** with your engineering, data science, and product teams.
+- ☕ **Buy me a coffee**: Support ongoing curation and open-source maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! To propose additions or updates:
+
+1. 🍴 **Fork** this repository.
+2. 🌿 Create a descriptive branch: `git checkout -b add/new-schema-platform`.
+3. 📝 Update `README.md` following the existing format (include product/repo name, official link, star badge if open-source, pricing, free tier details, and a concise 1–2 sentence description).
+4. 🚀 Submit a **Pull Request** detailing why the entry belongs in this category.
+
+---
+
+## ⚖️ Disclaimer
+
+- This repository is a **community-curated guide** intended for informational and educational purposes; inclusion does not constitute an endorsement.
+- **Custom Field Limits & Quotas**: SaaS tiers and pricing models evolve frequently (e.g., Salesforce custom object limits, Airtable record caps, and Workato credit consumption). Open-source platforms eliminate per-seat licensing but require operational self-hosting infrastructure. Always verify official documentation before making production architectural decisions.
+
+---
+
+<p align="center">
+  <b>Crafted with ❤️ for CRM architects, database engineers, data platform teams, and full-stack builders.</b>
+</p>
