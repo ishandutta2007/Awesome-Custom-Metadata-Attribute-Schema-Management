@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Custom-Metadata-Attribute-Schema-Management/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -72,9 +72,9 @@ Enterprise SaaS solutions sorted descending by company scale (**valuation / mark
 
 ## 🔓 Open-Source GitHub Projects
 
-Self-hosted frameworks, dynamic database engines, active metadata platforms, and schema registries. Sorted descending by **GitHub Star Count**:
+Self-hosted frameworks, dynamic database engines, active metadata platforms, and schema registries. Sorted descending by **GitHub Stars_Count**:
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---------|------------|-------------|
 | **[Strapi](https://github.com/strapi/strapi)** | [![Stars](https://img.shields.io/github/stars/strapi/strapi?style=social&color=white)](https://github.com/strapi/strapi/stargazers) | **Leading open-source headless CMS with visual Content-Type Builder.** Allows developers and content editors to dynamically add custom fields, define components, set up polymorphic relations, and generate automatic REST/GraphQL schemas with database migrations. |
 | **[NocoDB](https://github.com/nocodb/nocodb)** | [![Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers) | **Open-source Airtable alternative that turns any relational database into a smart spreadsheet.** Supports dynamic custom columns, attachment fields, ratings, JSON, formulas, and relational lookups/rollups over MySQL, PostgreSQL, SQL Server, and SQLite. |
@@ -142,7 +142,7 @@ Contributions are warmly welcomed! To propose additions or updates:
 
 1. 🍴 **Fork** this repository.
 2. 🌿 Create a descriptive branch: `git checkout -b add/new-schema-platform`.
-3. 📝 Update `README.md` following the existing format (include product/repo name, official link, star badge if open-source, pricing, free tier details, and a concise 1–2 sentence description).
+3. 📝 Update `README.md` following the existing format (include product/repo name, official link, Stars_Badge if open-source, pricing, free tier details, and a concise 1–2 sentence description).
 4. 🚀 Submit a **Pull Request** detailing why the entry belongs in this category.
 
 ---
